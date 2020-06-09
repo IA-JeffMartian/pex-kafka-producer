@@ -10,6 +10,6 @@ shield.on('start', () => {
   log.info('Shield server started');
 });
 
-shield.start();
+shield.start(8443);
 
 module.exports = app;

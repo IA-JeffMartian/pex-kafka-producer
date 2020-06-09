@@ -23,7 +23,7 @@ const pingPong = async (req, res, next) => {
   });
 
   // await pongPing();
-  return res.send().status(202);
+  return res.send({}).status(202);
 };
 
 // const pongPing = async () => {
