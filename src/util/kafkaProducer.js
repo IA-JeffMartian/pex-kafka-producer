@@ -1,16 +1,19 @@
-const { Kafka } = require('kafkajs');
-const kafkaInstance = new Kafka({
-  clientId: 'pex-kafka-producer',
-  brokers: ['localhost:9092']
-});
+// const { Kafka } = require('kafkajs');
 
-const producer = async () => {
-  const producer = kafkaInstance.producer();
-  await producer.connect();
+// const kafkaProducer = async () => {
+//   const kafkaInstance = new Kafka({
+//     clientId: 'pex-kafka-producer',
+//     brokers: ['localhost:9092']
+//   });
 
-  return producer;
-};
+//   const kafkaProducer = kafkaInstance.producer();
 
-module.exports = {
-  producer
-};
+//   await kafkaProducer.connect();
+//   console.log('From within: ', kafkaProducer);
+
+//   return kafkaProducer;
+// };
+
+// module.exports = {
+//   kafkaProducer
+// };
